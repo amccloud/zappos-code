@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
+
+@import url(http://fonts.googleapis.com/css?family=Limelight);
+body {
+  background: #222222 url('../imgs/bg.png');
+  color: #fff;
+  font-family: Helvetica, Arial;
+  font-size: 16px;
+}
+a {
+  color: #fff;
+}
+img.left {
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+img.right {
+  float: right;
+  margin: 0px 0px 10px 10px;
+}
+#wrapper {
+  margin: 0px auto;
+  width: 760px;
+}
+#header {
+  padding: 40px 0px 60px 0px;
+}
+#logo {
+  font-size: 450%;
+  text-align: center;
+  font-family: 'Black Ops One';
+}
+#logo a {
+  text-decoration: none;
+}
+#logo .city {
+  color: #f00;
+  display: block;
+  font-size: 85%;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+  font-family: 'Limelight';
+}
+#logo .mobile {
+  color: #ff0;
+  display: none;
+  font-family: "Arial Black", Arial;
+  font-weight: bold;
+  font-size: 20%;
+  padding: 3px 10px;
+}
+#navigation {
+  position: fixed;
+  top: 25%;
+  left: 60px;
+}
+#navigation a {
+  color: #999;
+  font-size: 150%;
+  text-decoration: none;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+#navigation a:hover {
+  color: #ff0;
+}
+#navigation li {
+  margin: 30px 0px;
+  text-align: right;
+}
+#guide .section {
+  margin: 0px 0px 40px 0px;
+  zoom: 1;
+}
+#guide .section:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+#guide .section h1 {
+  background: rgba(70, 70, 0, 0.2);
+  font-size: 180%;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 10px;
+  font-family: 'Black Ops One';
+}
+#guide .section p {
+  line-height: 160%;
+  padding: 10px;
+}
+#guide .section img {
+  border: 5px solid rgba(80, 80, 80, 0.2);
+}
+#footer {
+  margin: 20px 0px;
+}
+#footer .copyright {
+  color: #666;
+  text-align: right;
+  padding: 0px 20px;
+}
+.font-black-ops {
+  font-family: 'Black Ops One';
+}
+.font-limelight {
+  font-family: 'Limelight';
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}

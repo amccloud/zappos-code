@@ -1,0 +1,115 @@
+* {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+body {
+  background: #222;
+  font-family: Helvetica, arial;
+}
+div#todo {
+  overflow: hidden;
+}
+div#todo input#create-todo {
+  background: #000;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+div#todo input#create-todo:focus {
+  color: #fff;
+}
+div#todo ul.todo-list {
+  list-style: none;
+  padding: 0px;
+}
+div#todo ul.todo-list li {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: move;
+  height: 37px;
+  zoom: 1;
+}
+div#todo ul.todo-list li:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+div#todo ul.todo-list li input[name="completed"] {
+  margin-left: 10px;
+}
+div#todo ul.todo-list li input[name="title"] {
+  background: none;
+  border: none;
+  font-weight: bold;
+  float: left;
+  margin: 10px 0px 10px 5px;
+  width: 100%;
+}
+div#todo ul.todo-list li button.remove {
+  background: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+  height: 39px;
+  padding: 0px 20px 0px 10px;
+  position: relative;
+  top: -1px;
+  visibility: hidden;
+}
+div#todo ul.todo-list li button.remove:hover {
+  color: #f00;
+}
+div#todo ul.todo-list li div.controls {
+  float: left;
+  padding: 10px 0px;
+}
+div#todo ul.todo-list li span.grip {
+  color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  font-weight: bold;
+  line-height: 4px;
+  margin-left: 5px;
+  width: 10px;
+}
+div#todo ul.todo-list li div.title {
+  padding: 0px 45px;
+}
+div#todo ul.todo-list li:hover button.remove {
+  visibility: visible;
+}
+div#todo ul.todo-list li:hover span.grip {
+  color: #000;
+}
+div#todo ul.todo-list li.ui-sortable-helper {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+div#todo ul.todo-list li.ui-sortable-helper button.remove {
+  visibility: hidden;
+}
+div#todo ul.todo-list li.completed input[name="title"] {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: line-through;
+}
+div#todo ul.todo-list li.destroyed {
+  visibility: hidden;
+}
+div#todo ul.todo-list li.destroyed button.remove {
+  display: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}

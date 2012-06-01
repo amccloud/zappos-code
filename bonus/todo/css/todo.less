@@ -1,0 +1,140 @@
+* {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body {
+    background: #222;
+    font-family: Helvetica, arial;
+}
+
+div#todo {
+    overflow: hidden;
+
+    input#create-todo {
+        background: #000;
+        border: none;
+        padding: 10px;
+        width: 100%;
+
+        &:focus {
+            color: #fff;
+        }
+    }
+
+    ul.todo-list {
+        list-style: none;
+        padding: 0px;
+
+        li {
+            background: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: move;
+            height: 37px;
+            .clearfix();
+
+            input[name="completed"] {
+                margin-left: 10px;
+            }
+
+            input[name="title"] {
+                background: none;
+                border: none;
+                font-weight: bold;
+                float: left;
+                margin: 10px 0px 10px 5px;
+                width: 100%;
+            }
+
+            button.remove {
+                background: #000;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                font-weight: bold;
+                float: right;
+                height: 39px;
+                padding:  0px 20px 0px 10px;
+                position: relative;
+                top: -1px;
+                visibility: hidden;
+
+                &:hover {
+                    color: #f00;
+                }
+            }
+
+            div.controls {
+                float: left;
+                padding: 10px 0px;
+            }
+
+            span.grip {
+                color: rgba(0, 0, 0, 0.3);
+                display: inline-block;
+                font-weight: bold;
+                line-height: 4px;
+                margin-left: 5px;
+                width: 10px;
+            }
+
+            div.title {
+                padding: 0px 45px;
+            }
+
+            &:hover {
+                button.remove {
+                    visibility: visible;
+                }
+
+                span.grip {
+                    color: #000;
+                } 
+            }
+
+            &.ui-sortable-helper {
+                border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+                button.remove {
+                    visibility: hidden;
+                }
+            }
+
+            &.completed {
+                input[name="title"] {
+                    color: rgba(0, 0, 0, 0.4);
+                    text-decoration: line-through;
+                }
+            }
+
+            &.destroyed {
+                visibility: hidden;
+
+                button.remove {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.clearfix {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+        content: ".";
+    }
+}
+
+.box-shadow(@shadow: 0px 1px 3px rgba(0, 0, 0, .25)) {
+    box-shadow: @shadow;
+        -webkit-box-shadow: @shadow;
+        -moz-box-shadow: @shadow;
+}
