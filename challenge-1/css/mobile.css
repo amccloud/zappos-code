@@ -30,6 +30,7 @@
 #guide .section img {
   border-left: none;
   border-right: none;
+  border-top: none;
   width: 100%;
 }
 img.left,
